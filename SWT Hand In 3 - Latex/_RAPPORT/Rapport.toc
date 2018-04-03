@@ -1,0 +1,18 @@
+\changetocdepth {2}
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {danish}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Indholdsfortegnelse}{2}{section*.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\chapternumberline {1}Eksempel}{3}{chapter.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.1}Ops\IeC {\ae }tning af nyt dokument}{3}{section.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.2}Figurer og tabeller}{3}{section.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2.1}Figurer}{4}{subsection.1.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2.2}Tabeller}{4}{subsection.1.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2.3}Kode}{5}{subsection.1.2.3}
