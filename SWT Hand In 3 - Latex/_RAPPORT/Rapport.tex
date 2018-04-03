@@ -1,0 +1,25 @@
+\documentclass[a4paper,openany]{memoir}
+
+%*******************************************************************************
+%ÆNDRINGER LAVES HER
+%*******************************************************************************
+\title{Template Dokument}
+
+%-------------------------------------------------------------------------------
+% Sæt data til forside. Kan kommenteres ind efter behov.
+%\newcommand{\frontpageDate}{DD-MM-YYYY}  % Samme dato der vises i sidefod
+%\newcommand{\frontpageImage}{ImageName.png}
+%\newcommand{\frontpageCharacters}{NumberOfCharacters}
+%*******************************************************************************
+
+% Inkluder preambles
+\usepackage{../SharedPreamble}
+\usepackage{PrivatePreamble}
+
+\begin{document}
+
+	\import{../}{Forside}  \newpage
+	\tableofcontents\thispagestyle{fancy}  \newpage
+	\import{Sektioner/}{99_Eksempel}  \newpage
+
+\end{document}
