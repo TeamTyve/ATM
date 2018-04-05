@@ -11,7 +11,24 @@ namespace ATM.Application
     {
         static void Main(string[] args)
         {
+            ITransponderReceiver reciever;
+            reciever = TransponderReceiverFactory.CreateTransponderDataReceiver();
+            reciever.TransponderDataReady += RecieverOnTransponderDataReady;
+            while (true)
+            {
+               
+
+            }
             
+            
+        }
+
+        private static void RecieverOnTransponderDataReady(object sender, RawTransponderDataEventArgs rawTransponderDataEventArgs)
+        {
+            foreach (var v in rawTransponderDataEventArgs.TransponderData)
+            {
+                Console.WriteLine(v);
+            }
         }
     }
 }
