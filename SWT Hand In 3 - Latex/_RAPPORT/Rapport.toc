@@ -5,14 +5,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Indholdsfortegnelse}{2}{section*.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {1}Eksempel}{3}{chapter.1}
+\contentsline {chapter}{\chapternumberline {1}Design}{3}{chapter.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}Ops\IeC {\ae }tning af nyt dokument}{3}{section.1.1}
+\contentsline {section}{\numberline {1.1}Form\IeC {\r a}l}{3}{section.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}Figurer og tabeller}{3}{section.1.2}
+\contentsline {section}{\numberline {1.2}Design}{3}{section.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.1}Figurer}{4}{subsection.1.2.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.2}Tabeller}{4}{subsection.1.2.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.3}Kode}{5}{subsection.1.2.3}
+\contentsline {subsection}{\numberline {1.2.1}Links}{3}{subsection.1.2.1}
