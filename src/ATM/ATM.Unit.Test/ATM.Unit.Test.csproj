@@ -59,6 +59,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OutPutTest.cs" />
     <Compile Include="TOSUnitTest.cs" />
     <Compile Include="TracksUnitTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

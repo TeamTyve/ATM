@@ -43,6 +43,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConsoleOut.cs" />
+    <Compile Include="Interfaces\IConsoleOut.cs" />
     <Compile Include="Interfaces\ITrack.cs" />
     <Compile Include="Interfaces\ITracks.cs" />
     <Compile Include="Interfaces\IOutput.cs" />
