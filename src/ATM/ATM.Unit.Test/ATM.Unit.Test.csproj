@@ -59,8 +59,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OutPutTest.cs" />
+    <Compile Include="TOSUnitTest.cs" />
     <Compile Include="TracksUnitTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TrackUnitTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ATM.Application\ATM.Application.csproj">

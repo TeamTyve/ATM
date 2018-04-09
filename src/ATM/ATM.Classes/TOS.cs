@@ -7,7 +7,7 @@ using TransponderReceiver;
 
 namespace ATM.Classes
 {
-    public class TOS
+    public class TOS : ITOS
     {
         public ITransponderReceiver Receiver { get; private set; }
         public ITracks Tracks { get; private set; } = new Tracks();
