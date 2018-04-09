@@ -47,6 +47,7 @@
 	\end{tabular}
 
 	%-----------------------------------------------------------------------------
+
 	\ifdefined\frontpageCharacters
 		\vspace{10pt}
 		\textbf{Antal karakterer: } \frontpageCharacters\\
@@ -54,3 +55,11 @@
 	\vspace{30pt}
 
 \end{center}
+
+Link til Git: \url{https://github.com/TeamTyve/ATM} \newline
+
+Link til Jenkins - UnitTest: \url{http://ci3.ase.au.dk:8080/job/TeamTyveATMUnitTest/} \newline
+
+Link til Jenkins - Coverage: \url{http://ci3.ase.au.dk:8080/job/TeamTyveATMCoverage/} \newline \newline
+
+Obs! Vi har valgt ikke at teste Output.cs, da denne skriver direkte til konsollen, og det er ikke muligt at erstatte statiske metoder. Det vil derfor ikke være muligt at teste om Console.WriteLine() udskriver det korrekte. 

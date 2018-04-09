@@ -1,6 +1,11 @@
 \chapter{Design}
 \section{Formål}
+Formålet med denne opgave er at lave et sytem der kan monitorere og præsentere flytraffik over et givent område. Der vil blive indhentet informationer om flight-tracks fra en TransponderReceiver, givet i flight-tracks. Dernæst objektifiseres disse strings, og objekterne præsenteres i en konsol. 
 \section{Design}
+Der er i opgaven givet en .dll fil der benyttes til at indhente flight-tracks og præsentere disse i strings. Der implementeres derfor en Track Objectification Service, som benyttes til at objektifisere de indhentede strings. \tabularnewline
+Når strings'ne er blevet objektifiseret vil systemet herefter blive præsenteret i en konsol. \newline \newline
+Der vil i opgaven også være en Unit Test af denne Track Objectification Service. \newline
+Programmet vil blive versionsstyret ved hjælp af GitHub, og Jenkins vil blive benyttet til Continous Integration, samt Code Coverage.
 \subsection{Links}
 Link til Github: \newline \newline
 Link til Jenkins: \\
