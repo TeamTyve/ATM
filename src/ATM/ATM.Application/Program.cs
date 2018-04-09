@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using ATM.Classes;
 using TransponderReceiver;
+using Console = System.Console;
 
 namespace ATM.Application
 {
@@ -14,26 +15,10 @@ namespace ATM.Application
         public static Tracks Flights { get; set; } 
         static void Main(string[] args)
         {
-            ITransponderReceiver reciever;
-            reciever = TransponderReceiverFactory.CreateTransponderDataReceiver();
-            reciever.TransponderDataReady += RecieverOnTransponderDataReady;
-            Flights = new Tracks();
-            while (true)
-            {
-               
-
-            }
-            
+            var tos = new TOS(TransponderReceiverFactory.CreateTransponderDataReceiver());
+            while (true){}
         }
 
-        private static void RecieverOnTransponderDataReady(object sender, RawTransponderDataEventArgs rawTransponderDataEventArgs)
-        {
-            foreach (var v in rawTransponderDataEventArgs.TransponderData)
-            {
-                Flights.FlightTracks.Add(new Track(v));
-            }
-        }
 
-        
     }
 }

@@ -43,6 +43,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\ITrack.cs" />
+    <Compile Include="Interfaces\ITracks.cs" />
+    <Compile Include="IOutput.cs" />
+    <Compile Include="Output.cs" />
+    <Compile Include="TOS.cs" />
     <Compile Include="Track.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tracks.cs" />
