@@ -59,13 +59,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="TracksUnitTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ATM.Application\ATM.Application.csproj">
       <Project>{a4c7501c-a84a-4eaa-bb24-5547b11a0961}</Project>
       <Name>ATM.Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ATM.Classes\ATM.Classes.csproj">
+      <Project>{EA5E0598-7F0B-4EDC-8BB7-FB90C91469E2}</Project>
+      <Name>ATM.Classes</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
