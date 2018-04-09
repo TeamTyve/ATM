@@ -45,7 +45,8 @@
   <ItemGroup>
     <Compile Include="Interfaces\ITrack.cs" />
     <Compile Include="Interfaces\ITracks.cs" />
-    <Compile Include="IOutput.cs" />
+    <Compile Include="Interfaces\IOutput.cs" />
+    <Compile Include="Interfaces\ITOS.cs" />
     <Compile Include="Output.cs" />
     <Compile Include="TOS.cs" />
     <Compile Include="Track.cs" />
