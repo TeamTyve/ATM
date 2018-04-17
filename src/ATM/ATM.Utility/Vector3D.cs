@@ -1,4 +1,4 @@
-﻿namespace ATM.Classes
+﻿namespace ATM.Utility
 {
     public class Vector3D : Vector2D
     {
