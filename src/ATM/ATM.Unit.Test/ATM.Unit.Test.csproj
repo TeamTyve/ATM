@@ -65,6 +65,7 @@
     <Compile Include="TracksUnitTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TrackUnitTest.cs" />
+    <Compile Include="Vector2DUnitTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ATM.Application\ATM.Application.csproj">
