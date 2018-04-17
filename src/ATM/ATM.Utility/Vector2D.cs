@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace ATM.Classes
+﻿namespace ATM.Utility
 {
     public class Vector2D
     {

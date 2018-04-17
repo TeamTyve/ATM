@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ATM.Utility;
 
 namespace ATM.Classes
 {
@@ -44,7 +45,6 @@ namespace ATM.Classes
         public bool CheckAirSpace(int x, int y, int z)
         {
             return CheckAirSpace(new Vector3D(x, y, z));
-
         }
 
         public bool CheckAirSpace(Vector3D track)
