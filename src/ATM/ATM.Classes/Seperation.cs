@@ -31,10 +31,32 @@ namespace ATM.Classes
             }
         }
 
-        //public IEnumerable<ITrack> CheckSeperation()
-        //{
+        public IEnumerable<Tuple<ITrack, ITrack>> CheckSeperation(List<ITrack> tracks)
+        {
+            var list = new List<Tuple<ITrack, ITrack>>();
 
-        //}
+
+            foreach (var current in tracks)
+            {
+                foreach (var track in tracks)
+                {
+                    if (current.Tag == track.Tag)
+                    {
+                    }
+                    else if (Math.Abs(current.Vector.Z - track.Vector.Z) <= 300 &&
+                             (current.Vector.X + 5000 <= track.Vector.X || current.Vector.X - 5000 >= track.Vector.X) ||
+                             (current.Vector.Y + 5000 <= track.Vector.Y || current.Vector.Y - 5000 >= track.Vector.Y))
+                    {
+                    }
+                    else
+                    {
+                        list.Add(new Tuple<ITrack, ITrack>(current, track));
+                    }
+                }
+            }
+
+            return list.AsEnumerable();
+        }
 
         protected virtual void RaiseSeperationEvent(SeperationEventArgs e)
         {

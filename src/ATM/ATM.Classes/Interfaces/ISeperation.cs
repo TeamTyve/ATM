@@ -8,5 +8,7 @@ namespace ATM.Classes.Interfaces
         event EventHandler<SeperationEventArgs> SeperationEvent;
 
         void CheckSeperation(List<ITrack> list, ITrack current);
+        IEnumerable<Tuple<ITrack, ITrack>> CheckSeperation(List<ITrack> tracks);
+
     }
 }

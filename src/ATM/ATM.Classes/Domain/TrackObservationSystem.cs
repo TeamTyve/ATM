@@ -65,10 +65,19 @@ namespace ATM.Classes.Domain
 
         private void Update()
         {
-            var tracks = TrackRepository.GetAll();
+            var tracks = TrackRepository.GetAll().ToList();
             var seperationAlerts = SeperationAlertRepository.GetAll();
 
-            
+            var list = seperationAlerts.Select(alerts => tracks.FirstOrDefault(o => o.Tag == alerts.Tag1)).ToList();
+
+            var toRemove = Seperation.CheckSeperation(list).ToList();
+
+            if (!toRemove.Any()) return;
+
+            foreach (var track in toRemove)
+            {
+                SeperationAlertRepository.Remove(track.Item1, track.Item2);
+            }
         }
     }
 }

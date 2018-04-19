@@ -9,6 +9,7 @@ namespace ATM.Classes.Interfaces
         ISeperationAlert Get(ISeperationAlert seperationAlert);
         ISeperationAlert Get(string tag1, string tag2);
         void Remove(ISeperationAlert seperationAlert);
+        void Remove(ITrack track1, ITrack track2);
         IEnumerable<ISeperationAlert> GetAll();
 
     }

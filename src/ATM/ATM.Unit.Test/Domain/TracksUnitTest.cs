@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ATM.Classes;
+using ATM.Classes.Domain;
+using ATM.Classes.Interfaces;
 using NUnit.Framework;
 
 namespace ATM.Unit.Test
@@ -11,12 +13,12 @@ namespace ATM.Unit.Test
     [TestFixture]
     public class TracksUnitTest
     {
-        private Tracks uut;
+        private ITrackRepository uut;
 
         [SetUp]
         public void SetUp()
         {
-            uut = new Tracks();
+            uut = new TrackRepository();
         }
 
         [TestCase("Tag;0;0;0;00010101010101001")]
