@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.ObjectModel;
-using System.IO;
+﻿using System.Collections.ObjectModel;
 using ATM.Classes;
 using ATM.Classes.Interfaces;
 using NSubstitute;
 using NUnit.Framework;
 
-namespace ATM.Unit.Test
+namespace ATM.Unit.Test.Boundary
 {
     [TestFixture]
     public class OutPutTest

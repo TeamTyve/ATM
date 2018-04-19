@@ -33,7 +33,7 @@ namespace ATM.Classes
                 {
                     model.AirSpeed = (decimal) distance / (decimal) time;
                 }
-                catch (DivideByZeroException e)
+                catch (DivideByZeroException)
                 {
                     model.AirSpeed = 0; 
                 }

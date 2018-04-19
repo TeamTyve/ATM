@@ -48,6 +48,7 @@
     <Compile Include="Interfaces\IAirSpace.cs" />
     <Compile Include="ISeperation.cs" />
     <Compile Include="Seperation.cs" />
+    <Compile Include="TrackingSystem.cs" />
     <Compile Include="Vector2D.cs" />
     <Compile Include="Interfaces\IConsoleOut.cs" />
     <Compile Include="Interfaces\ITrack.cs" />

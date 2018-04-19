@@ -15,12 +15,13 @@ namespace ATM.Classes
         public IOutput Output { get; set; } = new Output();
         public IAirSpace AirSpace { get; private set; } = new AirSpace();
         public ISeperation Seperation { get; private set; } = new Seperation();
+        public bool ConsoleOut { get; set; } = true;
 
         public TOS(ITransponderReceiver receiver)
         {
             Receiver = receiver;
             receiver.TransponderDataReady += ReceiverOnTransponderDataReady;
-            Seperation.SeperationEvent += OnSeperation; 
+            Seperation.SeperationEvent += OnSeperation;
         }
 
         private void ReceiverOnTransponderDataReady(object sender, RawTransponderDataEventArgs rawTransponderDataEventArgs)
@@ -32,18 +33,24 @@ namespace ATM.Classes
 
             foreach (var t in Tracks.FlightTracks)
             {
-                t.IsInAirspace=AirSpace.CheckAirSpace(t.Vector);
-                Seperation.CheckSeperation(Tracks.FlightTracks.ToList(),t);
+                t.IsInAirspace = AirSpace.CheckAirSpace(t.Vector);
+                Seperation.CheckSeperation(Tracks.FlightTracks.ToList(), t);
             }
 
-            Output.Print(Tracks.FlightTracks);
+            if (ConsoleOut)
+            {
+                Output.Print(Tracks.FlightTracks);
+            }
         }
 
         private void OnSeperation(object sender, SeperationEventArgs e)
         {
             if (e.Still)
             {
-            Output.SeperationAlert(e.Tag1,e.Tag2,e.Time);
+                if (ConsoleOut)
+                {
+                    Output.SeperationAlert(e.Tag1, e.Tag2, e.Time);
+                }
             }
         }
     }
