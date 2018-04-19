@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ATM.Classes.Interfaces;
 using ATM.Utility;
 
 namespace ATM.Classes
 {
-    public class AirSpace
+    public class AirSpace : IAirSpace
     {
         public Vector3D Coordinate1 { get; set; }
         public Vector3D Coordinate2 { get; set; }

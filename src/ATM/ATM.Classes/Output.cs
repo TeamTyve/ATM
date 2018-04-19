@@ -16,8 +16,18 @@ namespace ATM.Classes
             ConsoleOut.WriteLine("\n---------------------------------------------------------------------------");
             foreach (var track in tracks)
             {
-                ConsoleOut.WriteLine($"Tag:{track.Tag} | Altitude:{track.Altitude} | x:{track.XCoordinate}, y:{track.YCoordinate} | Timestamp:{track.Timestamp}.{track.Timestamp.Millisecond}");
+                if (track.IsInAirspace)
+                {
+                ConsoleOut.WriteLine($"Tag:{track.Tag} | Altitude:{track.Vector.Z} | x:{track.Vector.X}, y:{track.Vector.Y} | Timestamp:{track.Timestamp}.{track.Timestamp.Millisecond} | Airspeed: {track.AirSpeed:#.##} | Is in airspace: {track.IsInAirspace}" );
+
+                }
             }
         }
+        public void SeperationAlert(string tag1, string tag2, DateTime time)
+        {
+            Console.WriteLine($"Flight: {tag1} collision warning with flight: {tag2}. TIME:{time}");
+        }
     }
+
+    
 }

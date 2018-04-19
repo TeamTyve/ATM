@@ -35,9 +35,9 @@ namespace ATM.Unit.Test
             var track = new Track("Tag;0;0;0;00010101010101001");
 
             Assert.That(_uut.Tracks.FlightTracks[0].Tag, Is.EqualTo(track.Tag));
-            Assert.That(_uut.Tracks.FlightTracks[0].Altitude, Is.EqualTo(track.Altitude));
-            Assert.That(_uut.Tracks.FlightTracks[0].XCoordinate, Is.EqualTo(track.XCoordinate));
-            Assert.That(_uut.Tracks.FlightTracks[0].YCoordinate, Is.EqualTo(track.YCoordinate));
+            Assert.That(_uut.Tracks.FlightTracks[0].Vector.Z, Is.EqualTo(track.Vector.Z));
+            Assert.That(_uut.Tracks.FlightTracks[0].Vector.X, Is.EqualTo(track.Vector.X));
+            Assert.That(_uut.Tracks.FlightTracks[0].Vector.Y, Is.EqualTo(track.Vector.Y));
             Assert.That(_uut.Tracks.FlightTracks[0].Timestamp, Is.EqualTo(track.Timestamp));
         }
 
