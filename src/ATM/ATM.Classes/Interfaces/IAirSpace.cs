@@ -1,4 +1,6 @@
-﻿namespace ATM.Classes.Interfaces
+﻿using ATM.Utility;
+
+namespace ATM.Classes.Interfaces
 {
     public interface IAirSpace
     {
