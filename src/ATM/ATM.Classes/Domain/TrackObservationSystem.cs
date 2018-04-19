@@ -67,6 +67,8 @@ namespace ATM.Classes.Domain
         {
             var tracks = TrackRepository.GetAll();
             var seperationAlerts = SeperationAlertRepository.GetAll();
+
+            
         }
     }
 }

@@ -12,3 +12,4 @@ namespace ATM.Classes.Interfaces
         ITrack Get(ITrack track);
         IEnumerable<ITrack> GetAll();
     }
+}

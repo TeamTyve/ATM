@@ -31,10 +31,14 @@ namespace ATM.Classes
             }
         }
 
+        //public IEnumerable<ITrack> CheckSeperation()
+        //{
+
+        //}
+
         protected virtual void RaiseSeperationEvent(SeperationEventArgs e)
         {
             SeperationEvent?.Invoke(this, e);
         }
-
     }
 }
