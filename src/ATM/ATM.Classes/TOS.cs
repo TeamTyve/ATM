@@ -43,7 +43,7 @@ namespace ATM.Classes
         {
             if (e.Still)
             {
-            Output.SeperationAlert(e.Tag1,e.Tag2,e.Time, Tracks.FlightTracks);
+            Output.SeperationAlert(e.Tag1,e.Tag2,e.Time);
             }
         }
     }
