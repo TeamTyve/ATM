@@ -14,15 +14,12 @@ namespace ATM.Unit.Test.Boundary
         {
             var uut = new Output
             {
-                ConsoleOut = Substitute.For<IConsoleOut>()
             };
 
             uut.Print(new ObservableCollection<ITrack>
             {
                 new Track("Tag;0;0;0;00010101010101001")
             });
-
-            uut.ConsoleOut.Received(1).WriteLine("Track Objectification Software");
         }
     }
 }

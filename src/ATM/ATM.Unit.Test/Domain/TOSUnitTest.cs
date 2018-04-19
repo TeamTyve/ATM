@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using ATM.Classes;
+using ATM.Classes.Domain;
 using ATM.Classes.Interfaces;
 using NSubstitute;
 using NUnit.Framework;
@@ -12,14 +13,14 @@ namespace ATM.Unit.Test
     [TestFixture]
     public class TOSUnitTest
     {
-        private ITOS _uut;
+        private ITrackObservationSystem _uut;
         private ITransponderReceiver _transponderReceiver;
 
         [SetUp]
         public void Setup()
         {
             _transponderReceiver = Substitute.For<ITransponderReceiver>();
-            _uut = new TOS(_transponderReceiver);
+            _uut = new TrackObservationSystem(_transponderReceiver);
             _uut.Output = Substitute.For<IOutput>();
         }
 
