@@ -20,7 +20,6 @@ namespace ATM.Classes
         public string Tag { get; set; }
 
         public Vector3D Vector { get; set; } = new Vector3D();
-        
 
         public DateTime Timestamp { get; set; }
         public decimal AirSpeed { get; set; }

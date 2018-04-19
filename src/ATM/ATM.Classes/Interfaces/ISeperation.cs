@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using ATM.Classes.Interfaces;
 
-namespace ATM.Classes
+namespace ATM.Classes.Interfaces
 {
     public interface ISeperation
     {

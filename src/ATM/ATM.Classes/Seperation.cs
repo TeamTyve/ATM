@@ -8,27 +8,9 @@ using ATM.Classes.Interfaces;
 
 namespace ATM.Classes
 {
-    public class SeperationEventArgs : EventArgs
-    {
-        public SeperationEventArgs(string tag1, DateTime time, string tag2, bool still)
-        {
-            Tag1 = tag1;
-            Tag2 = tag2;
-            Time = time;
-            Still = still;
-        }
-
-        public bool Still;
-        public string Tag1;
-        public string Tag2;
-        public DateTime Time;
-    }
-
     public class Seperation : ISeperation
     {
-        public Seperation()
-        {
-        }
+        public event EventHandler<SeperationEventArgs> SeperationEvent;
 
         public void CheckSeperation(List<ITrack> list, ITrack current)
         {
@@ -41,7 +23,7 @@ namespace ATM.Classes
                     }
                     else if (Math.Abs(current.Vector.Z - track.Vector.Z) <= 300 &&
                         (current.Vector.X + 5000 <= track.Vector.X || current.Vector.X - 5000 >= track.Vector.X) ||
-                        (current.Vector.Y + 5000 <= track.Vector.X || current.Vector.X - 5000 >= track.Vector.X))
+                        (current.Vector.Y + 5000 <= track.Vector.Y || current.Vector.Y - 5000 >= track.Vector.Y))
                     {
                         RaiseSeperationEvent(new SeperationEventArgs(current.Tag, DateTime.Now, track.Tag, true));
                     }
@@ -49,12 +31,14 @@ namespace ATM.Classes
             }
         }
 
+        //public IEnumerable<ITrack> CheckSeperation()
+        //{
+
+        //}
+
         protected virtual void RaiseSeperationEvent(SeperationEventArgs e)
         {
             SeperationEvent?.Invoke(this, e);
         }
-
-        public event EventHandler<SeperationEventArgs> SeperationEvent;
-
     }
 }

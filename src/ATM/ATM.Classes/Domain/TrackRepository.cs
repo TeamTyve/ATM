@@ -2,13 +2,11 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using ATM.Classes.Interfaces;
 
-namespace ATM.Classes
+namespace ATM.Classes.Domain
 {
-    public class Tracks : ITracks
+    public class TrackRepository : ITrackRepository
     {
         public ObservableCollection<ITrack> FlightTracks { get; private set; } = new ObservableCollection<ITrack>();
 
@@ -40,6 +38,21 @@ namespace ATM.Classes
                 FlightTracks.Remove(toRemove);
                 FlightTracks.Add(model);
             }
+        }
+
+        public ITrack Get(string tag)
+        {
+            return FlightTracks.FirstOrDefault(o => o.Tag == tag);
+        }
+
+        public ITrack Get(ITrack track)
+        {
+            return FlightTracks.FirstOrDefault(o => o.Tag == track.Tag);
+        }
+
+        public IEnumerable<ITrack> GetAll()
+        {
+            return FlightTracks.AsEnumerable();
         }
     }
 }
