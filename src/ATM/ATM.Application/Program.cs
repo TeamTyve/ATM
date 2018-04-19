@@ -16,7 +16,8 @@ namespace ATM.Application
         static void Main(string[] args)
         {
             var tos = new TOS(TransponderReceiverFactory.CreateTransponderDataReceiver());
-            while (true){}
+            //while (true){}
+            Console.ReadKey(); 
         }
 
 

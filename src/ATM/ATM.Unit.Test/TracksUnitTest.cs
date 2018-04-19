@@ -28,9 +28,9 @@ namespace ATM.Unit.Test
             var expectedTrack = new Track(expected);
 
             Assert.That(actual.Tag, Is.EqualTo(expectedTrack.Tag));
-            Assert.That(actual.XCoordinate, Is.EqualTo(expectedTrack.XCoordinate));
-            Assert.That(actual.YCoordinate, Is.EqualTo(expectedTrack.YCoordinate));
-            Assert.That(actual.Altitude, Is.EqualTo(expectedTrack.Altitude));
+            Assert.That(actual.Vector.X, Is.EqualTo(expectedTrack.Vector.X));
+            Assert.That(actual.Vector.Y, Is.EqualTo(expectedTrack.Vector.Y));
+            Assert.That(actual.Vector.Z, Is.EqualTo(expectedTrack.Vector.Z));
             Assert.That(actual.Timestamp, Is.EqualTo(expectedTrack.Timestamp));
         }
 
@@ -44,9 +44,9 @@ namespace ATM.Unit.Test
             var expectedTrack = new Track("Tag;2;2;2;99991230235959999");
 
             Assert.That(actual.Tag, Is.EqualTo(expectedTrack.Tag));
-            Assert.That(actual.XCoordinate, Is.EqualTo(expectedTrack.XCoordinate));
-            Assert.That(actual.YCoordinate, Is.EqualTo(expectedTrack.YCoordinate));
-            Assert.That(actual.Altitude, Is.EqualTo(expectedTrack.Altitude));
+            Assert.That(actual.Vector.X, Is.EqualTo(expectedTrack.Vector.X));
+            Assert.That(actual.Vector.Y, Is.EqualTo(expectedTrack.Vector.Y));
+            Assert.That(actual.Vector.Z, Is.EqualTo(expectedTrack.Vector.Z));
             Assert.That(actual.Timestamp, Is.EqualTo(expectedTrack.Timestamp));
         }
     }

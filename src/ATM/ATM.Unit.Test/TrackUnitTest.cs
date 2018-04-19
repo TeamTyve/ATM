@@ -13,9 +13,9 @@ namespace ATM.Unit.Test
             var uut = new Track(expected);
 
             Assert.That(uut.Tag, Is.EqualTo(expected.Split(';')[0]));
-            Assert.That(uut.Altitude.ToString(), Is.EqualTo(expected.Split(';')[1]));
-            Assert.That(uut.XCoordinate.ToString(), Is.EqualTo(expected.Split(';')[2]));
-            Assert.That(uut.YCoordinate.ToString(), Is.EqualTo(expected.Split(';')[3]));
+            Assert.That(uut.Vector.Z.ToString(), Is.EqualTo(expected.Split(';')[1]));
+            Assert.That(uut.Vector.X.ToString(), Is.EqualTo(expected.Split(';')[2]));
+            Assert.That(uut.Vector.Y.ToString(), Is.EqualTo(expected.Split(';')[3]));
             Assert.That(uut.Timestamp.ToString("yyyyMMddHHmmssfff"), Is.EqualTo(expected.Split(';')[4]));
 
         }
