@@ -43,21 +43,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AirSpace.cs" />
-    <Compile Include="ConsoleOut.cs" />
+    <Compile Include="Domain\AirSpace.cs" />
+    <Compile Include="Boundary\ConsoleOut.cs" />
     <Compile Include="Interfaces\IAirSpace.cs" />
-    <Compile Include="ISeperation.cs" />
+    <Compile Include="Interfaces\ISeperation.cs" />
     <Compile Include="Seperation.cs" />
     <Compile Include="TrackingSystem.cs" />
-    <Compile Include="Vector2D.cs" />
     <Compile Include="Interfaces\IConsoleOut.cs" />
     <Compile Include="Interfaces\ITrack.cs" />
     <Compile Include="Interfaces\ITracks.cs" />
     <Compile Include="Interfaces\IOutput.cs" />
     <Compile Include="Interfaces\ITOS.cs" />
-    <Compile Include="Output.cs" />
-    <Compile Include="TOS.cs" />
-    <Compile Include="Track.cs" />
+    <Compile Include="Boundary\Output.cs" />
+    <Compile Include="Domain\TOS.cs" />
+    <Compile Include="Domain\Track.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tracks.cs" />
   </ItemGroup>
