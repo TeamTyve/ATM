@@ -1,0 +1,5 @@
+BlaMutcherFucker,10,20,5,\n
+Sup,5,10,20,\n
+Der,5,20,10,\n
+BlaMutcherFucker,10,5,10,\n
+BlaMutcherFucker,25,5,10,\n
