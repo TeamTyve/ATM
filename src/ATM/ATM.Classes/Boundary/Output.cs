@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using ATM.Classes.Boundary;
 using ATM.Classes.Domain;
 using ATM.Classes.Interfaces;
 
-namespace ATM.Classes
+namespace ATM.Classes.Boundary
 {
     public class Output : IOutput
     {
+        public ILogHelper LogHelper { get; set; } = new LogHelper();
+
         public void Print(IEnumerable<ITrack> tracks)
         {
             LogHelper.Log(LoggerTarget.Console, String.Empty, true);
@@ -24,7 +24,8 @@ namespace ATM.Classes
                         $"| x:{track.Vector.X}, y:{track.Vector.Y} " +
                         $"| Timestamp:{track.Timestamp}.{track.Timestamp.Millisecond} " +
                         $"| Airspeed: {track.AirSpeed:#.##} " +
-                        $"| Is in airspace: {track.IsInAirspace}");
+                        $"| Is in airspace: {track.IsInAirspace}" + 
+                        $"| Direction: {track.Direction}");
                 }
             }
         }

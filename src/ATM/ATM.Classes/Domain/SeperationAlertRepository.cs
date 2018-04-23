@@ -8,6 +8,8 @@ namespace ATM.Classes.Domain
 {
     public class SeperationAlertRepository : ISeperationAlertRepository
     {
+        public ILogHelper LogHelper { get; set; } = new LogHelper();
+
         public SeperationAlertRepository()
         {
             LogHelper.Log(LoggerTarget.Event, String.Empty, true);

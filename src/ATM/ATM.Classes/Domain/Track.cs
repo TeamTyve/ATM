@@ -1,14 +1,8 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using ATM.Classes.Interfaces;
 using ATM.Utility;
 
-namespace ATM.Classes
+namespace ATM.Classes.Domain
 {
     public class Track : ITrack
     {
@@ -33,7 +27,7 @@ namespace ATM.Classes
             this.Vector.X = Int32.Parse(split[1]);
             this.Vector.Y = Int32.Parse(split[2]);
             this.Vector.Z = Int32.Parse(split[3]);
-            this.Timestamp = DateTime.ParseExact(split[4],"yyyyMMddHHmmssfff",null);
+            this.Timestamp = DateTime.ParseExact(split[4],"yyyyMMddHHmmssfff", null);
         }
     }
 }

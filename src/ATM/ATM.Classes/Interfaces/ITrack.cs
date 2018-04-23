@@ -7,6 +7,7 @@ namespace ATM.Classes.Interfaces
     {
         
         string Tag { get; set; }
+        double Direction { get; set; }
         DateTime Timestamp { get; set; }
         Vector3D Vector { get; set; }
         Decimal AirSpeed { get; set; }
