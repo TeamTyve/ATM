@@ -46,7 +46,6 @@ namespace ATM.Classes.Domain
 
         private void OnSeperation(object sender, SeperationEventArgs e)
         {
-            if (!e.Still) return;
             if (!ConsoleOut) return;
 
             var seperationAlert = new SeperationAlert(e.Tag1, e.Tag2, e.Time);
