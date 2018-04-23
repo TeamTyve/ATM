@@ -60,7 +60,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Domain\AirSpaceUnitTest.cs" />
-    <Compile Include="Boundary\OutPutTest.cs" />
+    <Compile Include="Boundary\ConsoleLogger.cs" />
     <Compile Include="Domain\TOSUnitTest.cs" />
     <Compile Include="Domain\TracksUnitTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
