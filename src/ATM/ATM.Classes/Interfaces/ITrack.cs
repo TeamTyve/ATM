@@ -10,6 +10,7 @@ namespace ATM.Classes.Interfaces
         Vector3D Vector { get; set; }
         Decimal AirSpeed { get; set; }
         bool IsInAirspace { get; set; }
+        double Direction { get; set; }
         
     }
 }
