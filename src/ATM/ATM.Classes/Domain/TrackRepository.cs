@@ -72,8 +72,8 @@ namespace ATM.Classes.Domain
         private static double CalculateDistance(ITrack model, ITrack toRemove)
         {
             // sqrt((x1-x2)^2+(y1-y2)^2+(z1-z2)^2)
-            return Math.Abs(Math.Sqrt(Math.Pow((toRemove.Vector.X - model.Vector.X), 2)
-                                     + Math.Pow((toRemove.Vector.Y - model.Vector.Y), 2)));
+            return Math.Abs(Math.Sqrt(Math.Pow((toRemove.Vector.Y - model.Vector.Y), 2)
+                                     + Math.Pow((toRemove.Vector.X - model.Vector.X), 2)));
         }
     }
 }
