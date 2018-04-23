@@ -62,8 +62,8 @@
     <Compile Include="Boundary\EventLoggerUnitTest.cs" />
     <Compile Include="Boundary\OutputUnitTest.cs" />
     <Compile Include="Domain\AirSpaceUnitTest.cs" />
-    <Compile Include="Boundary\ConsoleLogger.cs" />
-    <Compile Include="Domain\TOSUnitTest.cs" />
+    <Compile Include="Boundary\LogHelperUnitTest.cs" />
+    <Compile Include="Domain\TrackObservationSystemUnitTests.cs" />
     <Compile Include="Domain\TracksUnitTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Domain\TrackUnitTest.cs" />

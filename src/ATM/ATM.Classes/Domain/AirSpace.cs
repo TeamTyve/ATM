@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using ATM.Classes.Interfaces;
 using ATM.Utility;
 
-namespace ATM.Classes
+namespace ATM.Classes.Domain
 {
     public class AirSpace : IAirSpace
     {

@@ -5,11 +5,11 @@ namespace ATM.Classes.Interfaces
 {
     public interface ITrackObservationSystem
     {
-        ITransponderReceiver Receiver { get;}
-        ITrackRepository TrackRepository { get; }
+        ITransponderReceiver Receiver { get; set; }
+        ITrackRepository TrackRepository { get; set; }
         IOutput Output { get; set; }
-        IAirSpace AirSpace { get;}
-        ISeperation Seperation { get;}
+        IAirSpace AirSpace { get; set; }
+        ISeperation Seperation { get; set; }
         ISeperationAlertRepository SeperationAlertRepository { get; set; }
     }
 }
