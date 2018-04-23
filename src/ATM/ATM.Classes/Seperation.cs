@@ -10,15 +10,14 @@ namespace ATM.Classes
 {
     public class SeperationEventArgs : EventArgs
     {
-        public SeperationEventArgs(string tag1, DateTime time, string tag2, bool still)
+        public SeperationEventArgs(string tag1, DateTime time, string tag2)
         {
             Tag1 = tag1;
             Tag2 = tag2;
             Time = time;
-            Still = still; 
+            
         }
-
-        public bool Still;
+        
         public string Tag1;
         public string Tag2;
         public DateTime Time; 
@@ -39,14 +38,17 @@ namespace ATM.Classes
                     if (current.Tag == track.Tag)
                     {
                     }
-                    else if(Math.Abs(current.Vector.Z-track.Vector.Z)<=300 && 
-                        (current.Vector.X+5000<=track.Vector.X || current.Vector.X-5000 >= track.Vector.X) ||
-                        (current.Vector.Y + 5000 <= track.Vector.X || current.Vector.X-5000 >= track.Vector.X))
+                    else if((Math.Abs(current.Vector.Z-track.Vector.Z)<=300) && (
+                        (current.Vector.X+5000>=track.Vector.X && current.Vector.X-5000 <= track.Vector.X) &&
+                        (current.Vector.Y + 5000 >= track.Vector.Y && current.Vector.Y-5000 <= track.Vector.Y)))
                     {
-                        RaiseSeperationEvent(new SeperationEventArgs(current.Tag,DateTime.Now, track.Tag, true));
+                        RaiseSeperationEvent(new SeperationEventArgs(current.Tag,DateTime.Now, track.Tag));
                     }
+                   
+                   
                 }
             }
+            
         }
 
         protected virtual void RaiseSeperationEvent(SeperationEventArgs e)

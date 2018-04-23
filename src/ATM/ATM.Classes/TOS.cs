@@ -41,10 +41,7 @@ namespace ATM.Classes
 
         private void OnSeperation(object sender, SeperationEventArgs e)
         {
-            if (e.Still)
-            {
             Output.SeperationAlert(e.Tag1,e.Tag2,e.Time);
-            }
         }
     }
 }
