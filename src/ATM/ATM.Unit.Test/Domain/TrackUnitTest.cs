@@ -1,4 +1,5 @@
 ﻿using ATM.Classes;
+using ATM.Classes.Domain;
 using NUnit.Framework;
 
 namespace ATM.Unit.Test

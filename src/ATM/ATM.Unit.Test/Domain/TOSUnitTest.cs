@@ -19,19 +19,19 @@ namespace ATM.Unit.Test
         [SetUp]
         public void Setup()
         {
-            _transponderReceiver = Substitute.For<ITransponderReceiver>();
-            _uut = new TrackObservationSystem(_transponderReceiver);
-            _uut.Output = Substitute.For<IOutput>();
+            //_transponderReceiver = Substitute.For<ITransponderReceiver>();
+            //_uut = new TrackObservationSystem(_transponderReceiver);
+            //_uut.Output = Substitute.For<IOutput>();
         }
 
         [Test]
         public void ReceiverOnTransponderDataReady_FireEvent_PrintObject()
         {
-            var args = new TransponderDataEventArgs();
-            _transponderReceiver.TransponderDataReady += Raise.EventWith(new object(), new RawTransponderDataEventArgs(new List<string>
-           {
-               "Tag;0;0;0;00010101010101001"
-           }));
+           // var args = new TransponderDataEventArgs();
+           // _transponderReceiver.TransponderDataReady += Raise.EventWith(new object(), new RawTransponderDataEventArgs(new List<string>
+           //{
+           //    "Tag;0;0;0;00010101010101001"
+           //}));
 
             var track = new Track("Tag;0;0;0;00010101010101001");
 

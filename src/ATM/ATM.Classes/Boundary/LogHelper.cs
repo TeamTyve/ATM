@@ -2,25 +2,31 @@
 
 namespace ATM.Classes.Boundary
 {
-    public static class LogHelper
+    public class LogHelper : ILogHelper
     {
-        private static ILogger logger = null;
+        public ILogger Logger { get; set; }
 
-        public static void Log(LoggerTarget target, string message, bool clear = false)
+        public void Log(LoggerTarget target, string message, bool clear = false)
         {
             switch (target)
             {
                 case LoggerTarget.Console:
-                    logger = new ConsoleLogger();
-                    logger.WriteLine(message);
+                    if (Logger == null)
+                    {
+                        Logger = new ConsoleLogger();
+                    }
+                    Logger.WriteLine(message);
                     if (clear)
-                        logger.Clear();
+                        Logger.Clear();
                     break;
                 case LoggerTarget.Event:
-                    logger = new EventLogger();
-                    logger.WriteLine(message);
+                    if (Logger == null)
+                    {
+                        Logger = new EventLogger();
+                    }
+                    Logger.WriteLine(message);
                     if (clear)
-                        logger.Clear();
+                        Logger.Clear();
                     break;
                 default:
                     return;

@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Boundary\EventLogger.cs" />
+    <Compile Include="Interfaces\ILogHelper.cs" />
     <Compile Include="Boundary\LoggerTarget.cs" />
     <Compile Include="Boundary\LogHelper.cs" />
     <Compile Include="Domain\AirSpace.cs" />
