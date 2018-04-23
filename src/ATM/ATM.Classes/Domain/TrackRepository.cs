@@ -17,11 +17,19 @@ namespace ATM.Classes.Domain
             if (FlightTracks.FirstOrDefault(x => x.Tag == model.Tag) == null)
             {
                 FlightTracks.Add(model);
-                
+
             }
             else
             {
                 var toRemove = FlightTracks.First(x => x.Tag == model.Tag);
+                // sqrt((x1-x2)^2+(y1-y2)^2+(z1-z2)^2)
+                var distance = Math.Abs(Math.Sqrt(Math.Pow((toRemove.Vector.X - model.Vector.X), 2)
+                                         + Math.Pow((toRemove.Vector.Y - model.Vector.Y), 2)
+                                         + Math.Pow((toRemove.Vector.Z - model.Vector.Z), 2)));
+                var time = model.Timestamp.Subtract(toRemove.Timestamp).TotalSeconds;
+                try
+                {
+                    model.AirSpeed = (decimal)distance / (decimal)time;
                 double distance = CalculateDistance(model, toRemove);
                 var time = CalculateTime(model, toRemove);
                 try
@@ -72,8 +80,8 @@ namespace ATM.Classes.Domain
         private static double CalculateDistance(ITrack model, ITrack toRemove)
         {
             // sqrt((x1-x2)^2+(y1-y2)^2+(z1-z2)^2)
-            return Math.Abs(Math.Sqrt(Math.Pow((toRemove.Vector.X - model.Vector.X), 2)
-                                     + Math.Pow((toRemove.Vector.Y - model.Vector.Y), 2)));
+            return Math.Abs(Math.Sqrt(Math.Pow((toRemove.Vector.Y - model.Vector.Y), 2)
+                                     + Math.Pow((toRemove.Vector.X - model.Vector.X), 2)));
         }
     }
 }

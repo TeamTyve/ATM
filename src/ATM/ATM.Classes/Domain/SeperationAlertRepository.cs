@@ -21,8 +21,8 @@ namespace ATM.Classes.Domain
                 _seperationAlerts.Add(seperationAlert);
                 LogHelper.Log(LoggerTarget.Event, $"Adding Seperation Event:{seperationAlert.Tag1} with {seperationAlert.Tag2} at {seperationAlert.Time}");
             }
-            else
-                Update(seperationAlert);
+            //else
+                //Update(seperationAlert);
         }
 
         public void Add(ISeperationAlert seperationAlert, bool persist)
@@ -35,8 +35,8 @@ namespace ATM.Classes.Domain
                     LogHelper.Log(LoggerTarget.Event, $"Adding Seperation Event:{seperationAlert.Tag1} with {seperationAlert.Tag2} at {seperationAlert.Time}");
                 }
             }
-            else
-                Update(seperationAlert);
+            //else
+            //    Update(seperationAlert);
         }
 
         public void Update(ISeperationAlert seperationAlert)
@@ -62,6 +62,15 @@ namespace ATM.Classes.Domain
 
             _seperationAlerts.Remove(sepToRemove);
             LogHelper.Log(LoggerTarget.Event, $"Removing Seperation Event:{seperationAlert.Tag1} with {seperationAlert.Tag2} at {seperationAlert.Time}");
+        }
+
+        public void Remove(ITrack track1, ITrack track2)
+        {
+            var sepToRemove = Get(track1.Tag, track2.Tag);
+            if (sepToRemove == null) return;
+
+            _seperationAlerts.Remove(sepToRemove);
+            LogHelper.Log(LoggerTarget.Event, $"Removing Seperation Event:{sepToRemove.Tag1} with {sepToRemove.Tag2} at {sepToRemove.Time}");
         }
 
         public void Remove(ISeperationAlert seperationAlert, bool persist)
