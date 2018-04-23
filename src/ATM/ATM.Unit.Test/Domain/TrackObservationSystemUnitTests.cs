@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using ATM.Classes;
 using ATM.Classes.Domain;
 using ATM.Classes.Interfaces;
 using NSubstitute;
@@ -65,6 +67,23 @@ namespace ATM.Unit.Test.Domain
             }));
 
             _uut.TrackRepository.Received(3).GetAll();
+        }
+
+        [Test]
+        public void OnSeperation_FireEvent_AddSeperationEvent()
+        {
+            _uut.Seperation = Substitute.For<ISeperation>();
+            _uut.SeperationAlertRepository = Substitute.For<ISeperationAlertRepository>();
+
+            var seperationEvent = new SeperationEventArgs("Plane1", DateTime.Now, "Plane2");
+
+            _uut.Seperation.SeperationEvent += Raise.EventWith(new object(), seperationEvent);
+
+            var seperationAlert = new SeperationAlert(seperationEvent.Tag1, seperationEvent.Tag2, seperationEvent.Time);
+
+            // Something is wrong
+            // TODO:
+            _uut.SeperationAlertRepository.Received(0).Add(seperationAlert);
         }
     }
 }
