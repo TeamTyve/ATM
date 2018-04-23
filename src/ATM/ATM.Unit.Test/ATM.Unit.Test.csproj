@@ -59,6 +59,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Boundary\EventLoggerUnitTest.cs" />
+    <Compile Include="Boundary\OutputUnitTest.cs" />
     <Compile Include="Domain\AirSpaceUnitTest.cs" />
     <Compile Include="Boundary\ConsoleLogger.cs" />
     <Compile Include="Domain\TOSUnitTest.cs" />
