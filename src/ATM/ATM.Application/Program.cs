@@ -5,6 +5,8 @@ using System.Runtime.Remoting.Services;
 using System.Text;
 using System.Threading.Tasks;
 using ATM.Classes;
+using ATM.Classes.Boundary;
+using ATM.Classes.Domain;
 using TransponderReceiver;
 using Console = System.Console;
 
@@ -12,14 +14,11 @@ namespace ATM.Application
 {
     class Program
     {
-        public static Tracks Flights { get; set; } 
         static void Main(string[] args)
         {
-            var tos = new TOS(TransponderReceiverFactory.CreateTransponderDataReceiver());
-            //while (true){}
+            var trackingSystem = new TrackingSystem();
+
             Console.ReadKey(); 
         }
-
-
     }
 }
