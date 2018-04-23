@@ -25,9 +25,7 @@ namespace ATM.Classes
 
     public class Seperation : ISeperation
     {
-        public Seperation()
-        {
-        }
+        public event EventHandler<SeperationEventArgs> SeperationEvent;
 
         public void CheckSeperation(List<ITrack> list, ITrack current)
         {
@@ -51,12 +49,14 @@ namespace ATM.Classes
             
         }
 
+        //public IEnumerable<ITrack> CheckSeperation()
+        //{
+
+        //}
+
         protected virtual void RaiseSeperationEvent(SeperationEventArgs e)
         {
             SeperationEvent?.Invoke(this, e);
         }
-
-        public event EventHandler<SeperationEventArgs> SeperationEvent ; 
-
     }
 }

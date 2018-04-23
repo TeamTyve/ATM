@@ -43,23 +43,36 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AirSpace.cs" />
-    <Compile Include="ConsoleOut.cs" />
+    <Compile Include="Boundary\EventLogger.cs" />
+    <Compile Include="Boundary\LoggerTarget.cs" />
+    <Compile Include="Boundary\LogHelper.cs" />
+    <Compile Include="Domain\AirSpace.cs" />
+    <Compile Include="Boundary\ConsoleLogger.cs" />
+    <Compile Include="Interfaces\ISeperationAlertRepository.cs" />
+    <Compile Include="Domain\SeperationAlertRepository.cs" />
+    <Compile Include="Interfaces\ISeperationAlert.cs" />
+    <Compile Include="Domain\SeperationAlert.cs" />
     <Compile Include="Interfaces\IAirSpace.cs" />
     <Compile Include="Interfaces\ISeperation.cs" />
     <Compile Include="Seperation.cs" />
-    <Compile Include="Vector2D.cs" />
-    <Compile Include="Interfaces\IConsoleOut.cs" />
+    <Compile Include="SeperationEventArgs.cs" />
+    <Compile Include="TrackingSystem.cs" />
+    <Compile Include="Interfaces\ILogger.cs" />
     <Compile Include="Interfaces\ITrack.cs" />
-    <Compile Include="Interfaces\ITracks.cs" />
+    <Compile Include="Interfaces\ITrackRepository.cs" />
     <Compile Include="Interfaces\IOutput.cs" />
-    <Compile Include="Interfaces\ITOS.cs" />
-    <Compile Include="Output.cs" />
-    <Compile Include="TOS.cs" />
-    <Compile Include="Track.cs" />
+    <Compile Include="Interfaces\ITrackObservationSystem.cs" />
+    <Compile Include="Boundary\Output.cs" />
+    <Compile Include="Domain\TrackObservationSystem.cs" />
+    <Compile Include="Domain\Track.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tracks.cs" />
-    <Compile Include="Vector3D.cs" />
+    <Compile Include="Domain\TrackRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ATM.Utility\ATM.Utility.csproj">
+      <Project>{5ee38af2-f840-481d-9950-a94fd775f17d}</Project>
+      <Name>ATM.Utility</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
