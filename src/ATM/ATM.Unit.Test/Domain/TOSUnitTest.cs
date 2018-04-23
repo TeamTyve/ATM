@@ -35,11 +35,11 @@ namespace ATM.Unit.Test
 
             var track = new Track("Tag;0;0;0;00010101010101001");
 
-            Assert.That(_uut.Tracks.FlightTracks[0].Tag, Is.EqualTo(track.Tag));
-            Assert.That(_uut.Tracks.FlightTracks[0].Vector.Z, Is.EqualTo(track.Vector.Z));
-            Assert.That(_uut.Tracks.FlightTracks[0].Vector.X, Is.EqualTo(track.Vector.X));
-            Assert.That(_uut.Tracks.FlightTracks[0].Vector.Y, Is.EqualTo(track.Vector.Y));
-            Assert.That(_uut.Tracks.FlightTracks[0].Timestamp, Is.EqualTo(track.Timestamp));
+            Assert.That(_uut.TrackRepository.FlightTracks[0].Tag, Is.EqualTo(track.Tag));
+            Assert.That(_uut.TrackRepository.FlightTracks[0].Vector.Z, Is.EqualTo(track.Vector.Z));
+            Assert.That(_uut.TrackRepository.FlightTracks[0].Vector.X, Is.EqualTo(track.Vector.X));
+            Assert.That(_uut.TrackRepository.FlightTracks[0].Vector.Y, Is.EqualTo(track.Vector.Y));
+            Assert.That(_uut.TrackRepository.FlightTracks[0].Timestamp, Is.EqualTo(track.Timestamp));
         }
 
 
