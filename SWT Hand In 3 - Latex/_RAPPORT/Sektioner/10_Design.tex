@@ -1,4 +1,4 @@
-\chapter{Rapport}
+\chapter{Design}
 \section{Formål}
 Formålet med denne opgave er at lave et sytem der kan monitorere og præsentere flytraffik over et givent område. Der vil også blive kigget på om flyene i området flyver for tæt. Informationer om flight-tracks vil blive indhentet fra en TransponderReceiver, givet i strings. Dernæst objektifiseres disse strings, og objekterne præsenteres i en konsol. 
 Hele systemet vil blive testet ved hjælp af både unit tests samt integrationstests.
@@ -9,24 +9,18 @@ Link til Github: \url{https://github.com/TeamTyve/ATM} \newline \newline
 Der er i opgaven givet en .dll fil der benyttes til at indhente flight-tracks og præsentere disse i strings. Der implementeres derfor en Track Objectification Service, som benyttes til at objektifisere de indhentede strings. \tabularnewline
 Når strings'ne er blevet objektifiseret vil systemet herefter blive præsenteret i en konsol. \newline
 Formålet med at få objektifiseret disse strings, er at man får gjort de indhentede strings meget mere overskuelige når de omdannes til objekter. \newline
-Objekterne er fly, som består af henholdsvis et tag, x-, y- og z-koordinater, højde i luften, hastighed samt retning i grader. 
+Objekterne er fly, som består af henholdsvis et tag (navnet på flyet), x- og y-koordianter, højde i luften, hastighed, retning i grader samt et timestamp.
 
 
 Programmet vil blive versionsstyret ved hjælp af GitHub, og Jenkins vil blive benyttet til Continous Integration, samt Code Coverage af henholdsvis unit tests samt integrationstests.
 
-\subsection{Unit tests}
-Link til Jenkins - Unit tests: \url{http://ci3.ase.au.dk:8080/job/TeamTyveATMUnitTest/} \newline \newline
+\textbf{Klassediagram}
 
-Obs! Vi har valgt ikke at teste Output.cs, da denne skriver direkte til konsollen, og det er ikke muligt at erstatte statiske metoder. Det vil derfor ikke være muligt at teste om Console.WriteLine() udskriver det korrekte. 
-
-\subsection{Integrationstests}
-Link til Jenkins - Integrationstests: \newline \newline
 
 \section{Resultater}
 Link til Jenkins - Coverage: \url{http://ci3.ase.au.dk:8080/job/TeamTyveATMCoverage/} \\
 Som det ses på nedenstående billeder er opgaven blevet løst som forventet. Flyene i det ønskede airspace bliver udskrevet, og der kommer en warning når flyene flyver for tæt på hinanden.
 
 
-\section{Konklusion}
-Alt i alt er opgaven blevet løst som forventet
+
 
