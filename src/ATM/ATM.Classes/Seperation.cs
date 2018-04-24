@@ -27,17 +27,13 @@ namespace ATM.Classes
                     {
                         RaiseSeperationEvent(new SeperationEventArgs(current.Tag, DateTime.Now, track.Tag));
                     }
-
-
                 }
             }
-
         }
 
         public IEnumerable<Tuple<ITrack, ITrack>> CheckSeperation(List<ITrack> tracks)
         {
             var list = new List<Tuple<ITrack, ITrack>>();
-
 
             foreach (var current in tracks)
             {
@@ -57,7 +53,6 @@ namespace ATM.Classes
                     }
                 }
             }
-
             return list.AsEnumerable();
         }
 
