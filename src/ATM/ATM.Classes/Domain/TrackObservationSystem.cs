@@ -30,7 +30,7 @@ namespace ATM.Classes.Domain
         {
             var currentTracks = TrackController.AddTracks(rawTransponderDataEventArgs.TransponderData);
 
-            var currentEvents = SeperationController.EvaluateTracks();
+            var currentEvents = SeperationController.EvaluateTracks(currentTracks);
 
             OutputController.OutputTracks(currentTracks);
             OutputController.OutputEvents(currentEvents);
@@ -41,7 +41,7 @@ namespace ATM.Classes.Domain
             if (!ConsoleOut) return;
 
             var seperationAlert = new SeperationAlert(e.Tag1, e.Tag2, e.Time);
-
+             
             SeperationAlertRepository.Add(seperationAlert);
         }
 
