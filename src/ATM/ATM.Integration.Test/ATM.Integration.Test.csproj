@@ -74,6 +74,10 @@
       <Project>{ea5e0598-7f0b-4edc-8bb7-fb90c91469e2}</Project>
       <Name>ATM.Classes</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ATM.Utility\ATM.Utility.csproj">
+      <Project>{5ee38af2-f840-481d-9950-a94fd775f17d}</Project>
+      <Name>ATM.Utility</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -50,6 +51,7 @@ namespace ATM.Integration.Test
 
         }
 
+        // Output
         [Test]
         public void Output_PrintString_ConsoleLoggerReceivesString()
         {
@@ -94,16 +96,29 @@ namespace ATM.Integration.Test
         [Test]
         public void Output_PrintString_SeperationEventReceivesStringe()
         {
-            var track = new Track("Tag;10001;10001;10001;00010101010101001");
+            output.LogHelper.Logger = eventLogger;
+            output.LogHelper.Logger.Clear();
 
-            IEnumerable<ITrack> tracks = new List<ITrack>
-            {
-                track
-            };
+            var sepAlert = new SeperationAlert("Hello", "World", DateTime.Now);
 
-            output.Print(tracks);
+            output.SeperationAlert(sepAlert);
 
-            consoleLogger.Received(0).WriteLine("Tag:Tag | Altitude:10001 | x:10001, y:10001 | Timestamp:01/01/0001 01.01.01.1 | Airspeed:  | Is in airspace: True| Direction: ");
+            var msg = new char[51];
+            using (var streamReader = new StreamReader($"{Environment.GetFolderPath(Environment.SpecialFolder.Desktop)}\\Events.txt"))
+                streamReader.Read(msg, 0, 51);
+
+            Assert.That(msg, Is.EqualTo("Flight: Hello collision warning with flight: World."));
+            logHelper.Log(LoggerTarget.Event, String.Empty, true);
         }
+
+        // TrackRepository
+        [Test]
+        public void TrackRepository_CanAddTrack()
+        {
+            trackRepository.Add("Tag;10001;10001;10001;00010101010101001");
+
+            Assert.That(trackRepository.Get("Tag").Vector.X, Is.EqualTo(10001));
+        }
+
     }
 }
