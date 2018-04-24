@@ -2,19 +2,19 @@
 
 \chapter{Design}
 \section{Formål}
-Formålet med denne opgave er at lave et sytem der kan monitorere og præsentere flytraffik over et givent område. Der vil også blive kigget på om flyene i området flyver for tæt. Informationer om flight-tracks vil blive indhentet fra en TransponderReceiver, givet i strings. Dernæst objektifiseres disse strings, og objekterne præsenteres i en konsol. 
+Formålet med denne opgave er at lave et sytem der kan monitorere og præsentere flytraffik over et givent område. Der vil også blive kigget på om flyene i området flyver for tæt. Informationer om flight-tracks vil blive indhentet fra en TransponderReceiver, givet i strings. Dernæst objektifiseres disse strings og objekterne vil blive bearbejdet ved at tjekke om de flyver i et givent område samt om de flyver for tæt. Alle disse informationer vil blive præsenteret ved hjælp af et konsol-output.
 Hele systemet vil blive testet ved hjælp af både unit tests samt integrationstests.
 
 
 \section{Design}
 Link til Github: \url{https://github.com/TeamTyve/ATM} \newline \newline 
-Der er i opgaven givet en .dll fil der benyttes til at indhente flight-tracks og præsentere disse i strings. Der implementeres derfor en Track Objectification Service, som benyttes til at objektifisere de indhentede strings. \tabularnewline
-Formålet med at få objektifiseret disse strings, er at man får gjort de indhentede strings meget mere overskuelige når de omdannes til objekter, samt at det bliver muligt at arbejde på disse objekter. \newline
-Objekterne er fly, som består af henholdsvis et tag (navnet på flyet), x- og y-koordianter, højde i luften, hastighed, retning i grader samt et timestamp. \newline
+Der er i opgaven givet en .dll fil der benyttes til at indhente flight-tracks og præsentere disse i strings. Der implementeres derfor et Track Observation System (herefter også benævnt som TOS), som benyttes til at objektifisere de indhentede strings. \tabularnewline
+Formålet med at få objektifiseret disse strings, er at man får gjort de indhentede strings meget mere overskuelige når de omdannes til objekter, samt at det bliver muligt at arbejde på objekterne. \newline
+De indhentede data, og dermed objekterne er fly, som består af henholdsvis et tag (navnet på flyet), x- og y-koordianter, højde i luften, hastighed, retning i grader samt et timestamp. \newline
 
 Når flyene er blevet objektifiseret vil der blive checket for nogle forskellige ting. \tabularnewline
 Først vil der blive checket for, om et fly er i et givent område - kaldet AirSpace. Hvis flyet er i AirSpace, vil flyets informationer blive udskrevet til konsollen.
-Dernæst vil der blive checket på om de fly, der er i det givne område, flyver for tæt på hinanden. Hvis dette skulle være tilfældet, vil der udskrives en advarsel på konsollen, omkring hvilke fly der flyver for tæt på hinanden, samt hvad tid advarslen fremkom. \newline
+Dernæst vil der blive checket på om de fly, der er i airspace, flyver for tæt på hinanden. Hvis dette skulle være tilfældet, vil der udskrives en advarsel på konsollen, omkring hvilke fly der flyver for tæt på hinanden, samt hvad tid advarslen fremkom. \newline
 
 \textbf{Klassediagram - Vedhæftet som bilag bagerst i dokumentet} \\
 På klassediagrammet ses hvordan systemet er opbygget. \tabularnewline
@@ -49,7 +49,7 @@ Som det ses på nedenstående billede virker systemet som forventet. De tracks d
 
 De warnings der kommer, når to fly flyver for tæt, bliver udskrevet nederst i konsollen.\newline
 
-\includegraphics[scale=0.55]{1.PNG}
+\includegraphics[scale=0.6]{1.PNG}
 
 
 
