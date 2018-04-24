@@ -28,7 +28,7 @@ namespace ATM.Unit.Test.Boundary
 
             uut.Print(tracks.AsEnumerable());
             
-            logHelper.Received().Log(LoggerTarget.Console, "Tag:Tag | Altitude:10001 | x:10001, y:10001 | Timestamp:01/01/0001 01.01.01.1 | Airspeed:  | Is in airspace: True| Direction: ");
+            logHelper.Received(1).Log(LoggerTarget.Console, "Tag:Tag | Altitude:10001 | x:10001, y:10001 | Timestamp:01/01/0001 01.01.01.1 | Airspeed:  | Is in airspace: True| Direction: ");
         }
 
         [Test]
