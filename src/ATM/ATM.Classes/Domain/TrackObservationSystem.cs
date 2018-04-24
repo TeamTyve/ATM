@@ -9,6 +9,8 @@ namespace ATM.Classes.Domain
     public class TrackObservationSystem : ITrackObservationSystem
     {
         public ITransponderReceiver Receiver { get; set; }
+        public TrackController.TrackController TrackController { get; set; }
+
         public ITrackRepository TrackRepository { get; set; }
         public IOutput Output { get; set; } = new Output();
         public IAirSpace AirSpace { get; set; } = new AirSpace();
@@ -26,23 +28,12 @@ namespace ATM.Classes.Domain
 
         private void ReceiverOnTransponderDataReady(object sender, RawTransponderDataEventArgs rawTransponderDataEventArgs)
         {
-            Update();
+            var currentTracks = TrackController.AddTracks(rawTransponderDataEventArgs.TransponderData);
 
-            foreach (var v in rawTransponderDataEventArgs.TransponderData)
-            {
-                TrackRepository.Add(v);
-            }
+            var currentEvents = SeperationController.EvaluateTracks();
 
-            foreach (var t in TrackRepository.GetAll())
-            {
-                t.IsInAirspace = AirSpace.CheckAirSpace(t.Vector);
-                Seperation.CheckSeperation(TrackRepository.FlightTracks.ToList(), t);
-            }
-
-            if (ConsoleOut)
-            {
-                Display();
-            }
+            OutputController.OutputTracks(currentTracks);
+            OutputController.OutputEvents(currentEvents);
         }
 
         private void OnSeperation(object sender, SeperationEventArgs e)

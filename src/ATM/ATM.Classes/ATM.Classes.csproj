@@ -43,14 +43,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Boundary\EventLogger.cs" />
+    <Compile Include="OutputController\EventLogger.cs" />
+    <Compile Include="SeperationController\SeperationController.cs" />
     <Compile Include="TrackController\ITrackCalculations.cs" />
     <Compile Include="TrackController\TrackCalculations.cs" />
     <Compile Include="Interfaces\ILogHelper.cs" />
-    <Compile Include="Boundary\LoggerTarget.cs" />
-    <Compile Include="Boundary\LogHelper.cs" />
+    <Compile Include="OutputController\LoggerTarget.cs" />
+    <Compile Include="OutputController\LogHelper.cs" />
     <Compile Include="Domain\AirSpace.cs" />
-    <Compile Include="Boundary\ConsoleLogger.cs" />
+    <Compile Include="OutputController\ConsoleLogger.cs" />
     <Compile Include="Interfaces\ISeperationAlertRepository.cs" />
     <Compile Include="Domain\SeperationAlertRepository.cs" />
     <Compile Include="Interfaces\ISeperationAlert.cs" />
@@ -68,7 +69,7 @@
     <Compile Include="TrackController\ITrackRepository.cs" />
     <Compile Include="Interfaces\IOutput.cs" />
     <Compile Include="Interfaces\ITrackObservationSystem.cs" />
-    <Compile Include="Boundary\Output.cs" />
+    <Compile Include="OutputController\Output.cs" />
     <Compile Include="Domain\TrackObservationSystem.cs" />
     <Compile Include="Domain\Track.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
