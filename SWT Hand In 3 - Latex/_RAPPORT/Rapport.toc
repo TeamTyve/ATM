@@ -1,6 +1,7 @@
 \changetocdepth {2}
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
-\babel@toc {danish}{}
+\defcounter {refsection}{0}\relax 
+\select@language {danish}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Indholdsfortegnelse}{2}{section*.1}
 \defcounter {refsection}{0}\relax 
@@ -18,6 +19,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.2}Integrationstests}{5}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Diskussion}{6}{section.2.3}
+\contentsline {chapter}{\chapternumberline {3}Resultater}{7}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Konklusion}{7}{section.2.4}
+\contentsline {section}{\numberline {3.1}Resultater}{7}{section.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Diskussion}{7}{section.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Konklusion}{8}{section.3.3}
