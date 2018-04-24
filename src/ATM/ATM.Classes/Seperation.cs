@@ -47,8 +47,8 @@ namespace ATM.Classes
                     {
                     }
                     else if (Math.Abs(current.Vector.Z - track.Vector.Z) <= 300 &&
-                             (current.Vector.X + 5000 <= track.Vector.X || current.Vector.X - 5000 >= track.Vector.X) ||
-                             (current.Vector.Y + 5000 <= track.Vector.Y || current.Vector.Y - 5000 >= track.Vector.Y))
+                             (current.Vector.X + 5000 >= track.Vector.X && current.Vector.X - 5000 <= track.Vector.X) &&
+                             (current.Vector.Y + 5000 >= track.Vector.Y && current.Vector.Y - 5000 <= track.Vector.Y))
                     {
                     }
                     else
