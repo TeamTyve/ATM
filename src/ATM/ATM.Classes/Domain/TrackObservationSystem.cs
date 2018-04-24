@@ -9,7 +9,7 @@ namespace ATM.Classes.Domain
     public class TrackObservationSystem : ITrackObservationSystem
     {
         public ITransponderReceiver Receiver { get; set; }
-        public ITrackRepository TrackRepository { get; set; } = new TrackRepository();
+        public ITrackRepository TrackRepository { get; set; }
         public IOutput Output { get; set; } = new Output();
         public IAirSpace AirSpace { get; set; } = new AirSpace();
         public ISeperation Seperation { get;set; } = new Seperation();
