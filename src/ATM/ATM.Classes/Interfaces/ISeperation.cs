@@ -5,10 +5,7 @@ namespace ATM.Classes.Interfaces
 {
     public interface ISeperation
     {
-        event EventHandler<SeperationEventArgs> SeperationEvent;
-
-        void CheckSeperation(List<ITrack> list, ITrack current);
-        IEnumerable<Tuple<ITrack, ITrack>> CheckSeperation(List<ITrack> tracks);
-
+        List<SeperationEvent> CheckSeperation(List<ITrack> list);
+        
     }
 }

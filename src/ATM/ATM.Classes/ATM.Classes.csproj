@@ -54,12 +54,11 @@
     <Compile Include="OutputController\ConsoleLogger.cs" />
     <Compile Include="Interfaces\ISeperationAlertRepository.cs" />
     <Compile Include="Domain\SeperationAlertRepository.cs" />
-    <Compile Include="Interfaces\ISeperationAlert.cs" />
     <Compile Include="Domain\SeperationAlert.cs" />
     <Compile Include="Interfaces\IAirSpace.cs" />
     <Compile Include="Interfaces\ISeperation.cs" />
-    <Compile Include="Seperation.cs" />
-    <Compile Include="SeperationEventArgs.cs" />
+    <Compile Include="SeperationController\Seperation.cs" />
+    <Compile Include="SeperationController\SeperationEvent.cs" />
     <Compile Include="TrackController\ITrackFactory.cs" />
     <Compile Include="TrackController\TrackController.cs" />
     <Compile Include="TrackController\TrackFactory.cs" />

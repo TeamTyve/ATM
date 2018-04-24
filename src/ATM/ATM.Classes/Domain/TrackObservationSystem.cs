@@ -2,6 +2,7 @@
 using System.Linq;
 using ATM.Classes.Boundary;
 using ATM.Classes.Interfaces;
+using ATM.Classes.SeperationController;
 using TransponderReceiver;
 
 namespace ATM.Classes.Domain
@@ -23,7 +24,6 @@ namespace ATM.Classes.Domain
         {
             Receiver = receiver;
             receiver.TransponderDataReady += ReceiverOnTransponderDataReady;
-            Seperation.SeperationEvent += OnSeperation;
         }
 
         private void ReceiverOnTransponderDataReady(object sender, RawTransponderDataEventArgs rawTransponderDataEventArgs)
@@ -35,15 +35,7 @@ namespace ATM.Classes.Domain
             OutputController.OutputTracks(currentTracks);
             OutputController.OutputEvents(currentEvents);
         }
-
-        private void OnSeperation(object sender, SeperationEventArgs e)
-        {
-            if (!ConsoleOut) return;
-
-            var seperationAlert = new SeperationAlert(e.Tag1, e.Tag2, e.Time);
-
-            SeperationAlertRepository.Add(seperationAlert);
-        }
+       
 
         private void Display()
         {

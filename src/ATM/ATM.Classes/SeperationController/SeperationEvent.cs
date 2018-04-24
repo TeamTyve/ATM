@@ -2,9 +2,9 @@
 
 namespace ATM.Classes
 {
-    public class SeperationEventArgs : EventArgs
+    public class SeperationEvent
     {
-        public SeperationEventArgs(string tag1, DateTime time, string tag2)
+        public SeperationEvent(string tag1, DateTime time, string tag2)
         {
             Tag1 = tag1;
             Tag2 = tag2;
