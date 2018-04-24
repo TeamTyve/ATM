@@ -64,9 +64,17 @@ namespace ATM.Integration.Test
         // Output
 
         [Test]
-        public void Output_()
+        public void Output_OutputTracks()
         {
+            output.LogHelper.Logger = Substitute.For<Classes.Interfaces.ILogger>();
 
+            trackObservationSystem.ReceiverOnTransponderDataReady(new object(), new RawTransponderDataEventArgs(new List<string>()
+            {
+                "Tag;10001;10001;10001;00010101010101001",
+                "Tag1;10001;10001;10001;00010101010101001"
+            }));
+
+            output.LogHelper.Received(1).Log(LoggerTarget.Console, "bla");
         }
 
 
@@ -77,12 +85,14 @@ namespace ATM.Integration.Test
 
         }
 
+
         // Airspace
 
         public void Airspace()
         {
 
         }
+
 
         // SeperationAlert
 

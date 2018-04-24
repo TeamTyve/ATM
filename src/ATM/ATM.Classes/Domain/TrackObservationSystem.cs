@@ -12,7 +12,7 @@ namespace ATM.Classes.Domain
         public ITrackRepository TrackRepository { get; set; } = new TrackRepository();
         public IOutput Output { get; set; } = new Output();
         public IAirSpace AirSpace { get; set; } = new AirSpace();
-        public ISeperation Seperation { get;set; } = new Seperation();
+        public ISeperation Seperation { get; set; } = new Seperation();
         public ISeperationAlertRepository SeperationAlertRepository { get; set; } = new SeperationAlertRepository();
 
         public bool ConsoleOut { get; set; } = true;
@@ -24,7 +24,7 @@ namespace ATM.Classes.Domain
             Seperation.SeperationEvent += OnSeperation;
         }
 
-        private void ReceiverOnTransponderDataReady(object sender, RawTransponderDataEventArgs rawTransponderDataEventArgs)
+        public void ReceiverOnTransponderDataReady(object sender, RawTransponderDataEventArgs rawTransponderDataEventArgs)
         {
             Update();
 
@@ -45,7 +45,7 @@ namespace ATM.Classes.Domain
             }
         }
 
-        private void OnSeperation(object sender, SeperationEventArgs e)
+        public void OnSeperation(object sender, SeperationEventArgs e)
         {
             if (!ConsoleOut) return;
 
