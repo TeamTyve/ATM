@@ -25,7 +25,7 @@ namespace ATM.Classes.Boundary
                         $"| Timestamp:{track.Timestamp}.{track.Timestamp.Millisecond} " +
                         $"| Airspeed: {track.AirSpeed:#.##} " +
                         $"| Is in airspace: {track.IsInAirspace}" + 
-                        $"| Direction: {track.Direction}");
+                        $"| Direction: {track.Direction:#.##}");
                 }
             }
         }
