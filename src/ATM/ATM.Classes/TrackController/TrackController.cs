@@ -23,28 +23,32 @@ namespace ATM.Classes.TrackController
         {
             var newTracks = new List<ITrack>();
 
+            // Objectify new tracks
             foreach (var rawTrack in rawTracks)
             {
-                newTracks.Add(TrackFactory.CreateTrack(rawTrack));
+                var track = TrackFactory.CreateTrack(rawTrack);
+                if (AirSpace.CheckAirSpace(track.Vector))
+                {
+                    newTracks.Add(track);
+                }
             }
 
-            var currentTracks = TrackRepository.GetAll();
-            var tracksToRemove = new List<ITrack>();
-            var tracksToAdd = new List<ITrack>();
+            //Compare to old tracks and update
+
+            var curTracks = TrackRepository.GetAll().ToList();
 
             foreach (var newTrack in newTracks)
             {
-
+                if (!curTracks.Contains(newTrack))
+                {
+                    
+                }
             }
 
 
 
-
+            
 
         }
-
-
-
-
     }
 }

@@ -30,12 +30,24 @@ namespace ATM.Classes.Domain
         {
             var currentTracks = TrackController.AddTracks(rawTransponderDataEventArgs.TransponderData);
 
-            var currentEvents = SeperationController.EvaluateTracks();
+            var currentEvents = SeperationController.EvaluateTracks(currentTracks);
 
             OutputController.OutputTracks(currentTracks);
             OutputController.OutputEvents(currentEvents);
         }
+<<<<<<< HEAD
        
+=======
+
+        private void OnSeperation(object sender, SeperationEventArgs e)
+        {
+            if (!ConsoleOut) return;
+
+            var seperationAlert = new SeperationAlert(e.Tag1, e.Tag2, e.Time);
+             
+            SeperationAlertRepository.Add(seperationAlert);
+        }
+>>>>>>> e60ab10bb7cb0a36f277add585be7fe9569545d6
 
         private void Display()
         {
