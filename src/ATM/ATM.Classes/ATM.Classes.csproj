@@ -44,6 +44,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Boundary\EventLogger.cs" />
+    <Compile Include="Domain\ITrackFactory.cs" />
+    <Compile Include="Domain\TrackFactory.cs" />
     <Compile Include="Interfaces\ILogHelper.cs" />
     <Compile Include="Boundary\LoggerTarget.cs" />
     <Compile Include="Boundary\LogHelper.cs" />
