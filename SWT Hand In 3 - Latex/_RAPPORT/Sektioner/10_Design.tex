@@ -7,16 +7,18 @@ Hele systemet vil blive testet ved hjælp af både unit tests samt integrationst
 \section{Design}
 Link til Github: \url{https://github.com/TeamTyve/ATM} \newline \newline 
 Der er i opgaven givet en .dll fil der benyttes til at indhente flight-tracks og præsentere disse i strings. Der implementeres derfor en Track Objectification Service, som benyttes til at objektifisere de indhentede strings. \tabularnewline
-Når strings'ne er blevet objektifiseret vil systemet herefter blive præsenteret i en konsol. \newline
-Formålet med at få objektifiseret disse strings, er at man får gjort de indhentede strings meget mere overskuelige når de omdannes til objekter. \newline
-Objekterne er fly, som består af henholdsvis et tag (navnet på flyet), x- og y-koordianter, højde i luften, hastighed, retning i grader samt et timestamp.
+Formålet med at få objektifiseret disse strings, er at man får gjort de indhentede strings meget mere overskuelige når de omdannes til objekter, samt at det bliver muligt at arbejde på disse objekter. \newline
+Objekterne er fly, som består af henholdsvis et tag (navnet på flyet), x- og y-koordianter, højde i luften, hastighed, retning i grader samt et timestamp. \newline \newline
 
+Når flyene er blevet objektifiseret vil der blive checket for nogle forskellige ting. \tabularnewline
+Først vil der blive checket for, om et fly er i et givent område - kaldet AirSpace. Hvis flyet er i AirSpace, vil flyets informationer blive udskrevet til konsollen.
+Dernæst vil der blive checket på om de fly, der er i det givne område, flyver for tæt på hinanden. Hvis dette skulle være tilfældet, vil der udskrives en advarsel på konsollen, omkring hvilke fly der flyver for tæt på hinanden, samt hvad tid advarslen fremkom.
 
-Programmet vil blive versionsstyret ved hjælp af GitHub, og Jenkins vil blive benyttet til Continous Integration, samt Code Coverage af henholdsvis unit tests samt integrationstests. \newline
 
 \textbf{Klassediagram} \\
 Nedenstående ses klassediagrammet for systemet \newline
 \textbf{Sekvensdiagram} \\
+Nedenstående ses sekvensdiagrammet for systemet \newline
 
 
 \section{Resultater}

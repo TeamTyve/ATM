@@ -7,5 +7,12 @@ Obs! Vi har valgt ikke at teste Output.cs, da denne skriver direkte til konsolle
 \section{Integrationstests}
 Link til Jenkins - Integrationstests: \newline \newline
 
+Vi har i denne opgave valgt at benytte bottom up, somv vores integrationsstrategi.\tabularnewline
+Denne strategi er valgt grundet at der derved er færre komponenter der skal stubbes, samt at det har virket intuitivt at bruge denne strategi.
+
+Generelt set går bottom up testing ud på at starte fra bunden i det tilhørende dependency tree. De nederste klasser, og derved de klasser der afhænger af mindst vil blive testet først. Hvorfra der hierakisk vil blive testet op igennem træet, indtil alle forbindelser imellem klasserne er blevet tests. Der vil altså blive testet fra submodulerne til hovedmodul(erne).
+En af fordelene ved bottom up strategien er at det kan eliminere behovet for anvendelse af stubbe i og med at der ikke er nogle højerestående dependencies at tage højde for. Dog er en af ulemperne ved strategien, at man får testet den overordnet funktionalitet sent i processen, og der derfor er risiko for at man skal lave noget af systemet om, senere end nødvendigt. 
+
+
 \section{Konklusion}
 Alt i alt er opgaven blevet løst som forventet. Der er, på trods af, at visse ting ikke er blevet testet, stadig en god code coverage.
