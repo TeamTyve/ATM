@@ -59,20 +59,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ATM.Application\ATM.Application.csproj">
-      <Project>{a4c7501c-a84a-4eaa-bb24-5547b11a0961}</Project>
-      <Name>ATM.Application</Name>
-    </ProjectReference>
+    <Compile Include="StepOne.cs" />
+    <Compile Include="StepTwo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ATM.Classes\ATM.Classes.csproj">
+      <Project>{ea5e0598-7f0b-4edc-8bb7-fb90c91469e2}</Project>
+      <Name>ATM.Classes</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
