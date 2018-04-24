@@ -33,6 +33,7 @@ namespace ATM.Integration.Test
         private ITrack track;
         private SeperationEventArgs seperationEventArgs;
         private IAirSpace airspace;
+        private ISeperationAlertRepository seperationAlertRepository;
 
 
         [SetUp]
@@ -47,13 +48,70 @@ namespace ATM.Integration.Test
             eventLogger = new EventLogger();
             output.LogHelper = logHelper;
             airspace = new AirSpace();
+            seperationAlertRepository = new SeperationAlertRepository();
             transponderReceiver = Substitute.For<ITransponderReceiver>();
 
-            trackObservationSystem = new TrackObservationSystem(transponderReceiver);
-            trackObservationSystem.TrackRepository = trackRepository;
-            trackObservationSystem.Output = output;
-            trackObservationSystem.AirSpace = AirSpace;
+            trackObservationSystem = new TrackObservationSystem(transponderReceiver)
+            {
+                TrackRepository = trackRepository,
+                Output = output,
+                AirSpace = airspace,
+                SeperationAlertRepository = seperationAlertRepository
+            };
+        }
 
+
+        // Output
+
+        [Test]
+        public void Output_()
+        {
+
+        }
+
+
+        // TrackRepository
+
+        public void TrackRepository()
+        {
+
+        }
+
+        // Airspace
+
+        public void Airspace()
+        {
+
+        }
+
+        // SeperationAlert
+
+        public void SeperationAlert()
+        {
+
+        }
+
+
+        // SeperationAlertRepository
+
+        public void SeperationAlertRepository()
+        {
+
+        }
+
+
+        // Seperation
+
+        public void Seperation()
+        {
+
+        }
+
+
+        // TrackingSystem
+
+        public void TrackingSystem()
+        {
 
         }
     }
