@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ATM.Classes;
+using ATM.Classes.Domain;
 using ATM.Utility;
 using NUnit.Framework;
 using NUnit.Framework.Internal;
