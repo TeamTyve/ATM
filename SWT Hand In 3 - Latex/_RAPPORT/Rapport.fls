@@ -1,0 +1,277 @@
+PWD g:/projekt reps/ATM/SWT Hand In 3 - Latex/_RAPPORT
+INPUT C:/Users/Jakob/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt
+INPUT g:/projekt reps/ATM/SWT Hand In 3 - Latex/_RAPPORT/Rapport.tex
+OUTPUT Rapport.log
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/memoir/memoir.cls
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/memoir/memoir.cls
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/ifpdf.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/ifpdf.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/ifetex/ifetex.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/ifetex/ifetex.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/plain/ifetex/ifetex.tex
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/generic/ifxetex/ifxetex.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/generic/ifxetex/ifxetex.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/ifluatex.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/ifluatex.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/memoir/mem10.clo
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/memoir/mem10.clo
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/cm/cmr8.tfm
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/cm/cmr9.tfm
+INPUT ../SharedPreamble.sty
+INPUT ../SharedPreamble.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/import/import.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/import/import.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/hyperref/hyperref.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/hyperref/hyperref.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/hobsub-hyperref.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/hobsub-hyperref.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/hobsub-hyperref.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/hobsub-generic.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/hobsub-generic.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics/keyval.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics/keyval.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/auxhook.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/auxhook.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/kvoptions.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/kvoptions.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/hyperref/pd1enc.def
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/hyperref/pd1enc.def
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/00miktex/hyperref.cfg
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/00miktex/hyperref.cfg
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/url/url.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/url/url.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/memoir/memhfixc.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/memoir/memhfixc.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/hyperref/hpdftex.def
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/hyperref/hpdftex.def
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/rerunfilecheck.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/rerunfilecheck.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/xcolor/xcolor.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/xcolor/xcolor.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics-cfg/color.cfg
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics-cfg/color.cfg
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics-def/pdftex.def
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics-def/pdftex.def
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/colortbl/colortbl.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/colortbl/colortbl.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/geometry/geometry.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/geometry/geometry.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/geometry/geometry.cfg
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/geometry/geometry.cfg
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/generic/babel/babel.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/generic/babel/babel.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/generic/babel/switch.def
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/arabi/bblopts.cfg
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/arabi/bblopts.cfg
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/babel-danish/danish.ldf
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/babel-danish/danish.ldf
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/generic/babel/babel.def
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/generic/babel/txtbabel.def
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/inputenc.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/inputenc.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/fontenc.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/fontenc.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/t1enc.def
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/t1enc.def
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/jknappen/ec/ecrm1000.tfm
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/psnfss/helvet.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/psnfss/helvet.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/fancyhdr/fancyhdr.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/fancyhdr/fancyhdr.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/lastpage/lastpage.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/lastpage/lastpage.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics/graphicx.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics/graphicx.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics/graphics.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics/graphics.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics/trig.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics/trig.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics-cfg/graphics.cfg
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics-cfg/graphics.cfg
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/float/float.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/float/float.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/listings/listings.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/listings/listings.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/listings/lstmisc.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/listings/lstmisc.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/listings/listings.cfg
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/listings/listings.cfg
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/caption/caption.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/caption/caption.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/caption/caption3.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/caption/caption3.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/pbox/pbox.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/pbox/pbox.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/tools/calc.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/tools/calc.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/ifthen.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/ifthen.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/datetime2/datetime2.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/datetime2/datetime2.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/tracklang/tracklang.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/tracklang/tracklang.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/generic/tracklang/tracklang.tex
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/generic/tracklang/tracklang.tex
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/etoolbox/etoolbox.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/etoolbox/etoolbox.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/xkeyval/xkeyval.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/xkeyval/xkeyval.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/generic/xkeyval/xkeyval.tex
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/generic/xkeyval/xkvutils.tex
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/datetime2-danish/datetime2-danish.ldf
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/datetime2-danish/datetime2-danish.ldf
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/datetime2-danish/datetime2-danish.ldf
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/datetime2-danish/datetime2-danish-ascii.ldf
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/datetime2-danish/datetime2-danish-ascii.ldf
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/enumitem/enumitem.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/enumitem/enumitem.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/biblatex/biblatex.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/biblatex/biblatex.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/logreq/logreq.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/logreq/logreq.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/logreq/logreq.def
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/logreq/logreq.def
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/xstring/xstring.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/xstring/xstring.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/generic/xstring/xstring.tex
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/biblatex/blx-dm.def
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/biblatex/blx-dm.def
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/biblatex/blx-compat.def
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/biblatex/blx-compat.def
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/biblatex/blx-bibtex.def
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/biblatex/blx-bibtex.def
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/biblatex/biblatex.def
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/biblatex/biblatex.def
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/biblatex/bbx/authoryear.bbx
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/biblatex/bbx/authoryear.bbx
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/biblatex/bbx/standard.bbx
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/biblatex/bbx/standard.bbx
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/biblatex/cbx/authoryear.cbx
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/biblatex/cbx/authoryear.cbx
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/biblatex/biblatex.cfg
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/biblatex/biblatex.cfg
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/fixme/fixme.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/fixme/fixme.sty
+INPUT PrivatePreamble.sty
+INPUT PrivatePreamble.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/biblatex/lbx/danish.lbx
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/biblatex/lbx/danish.lbx
+INPUT Rapport.aux
+INPUT Rapport.aux
+OUTPUT Rapport.aux
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/psnfss/t1phv.fd
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/psnfss/t1phv.fd
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/adobe/helvetic/phvr8t.tfm
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/hyperref/nameref.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/hyperref/nameref.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/gettitlestring.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/gettitlestring.sty
+INPUT Rapport.out
+INPUT Rapport.out
+INPUT Rapport.out
+INPUT Rapport.out
+OUTPUT Rapport.pdf
+INPUT ./Rapport.out
+INPUT ./Rapport.out
+OUTPUT Rapport.out
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/context/base/supp-pdf.mkii
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/context/base/supp-pdf.mkii
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/epstopdf-base.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/epstopdf-base.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/grfext.sty
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/grfext.sty
+OUTPUT Rapport-blx.bib
+INPUT Rapport.bbl
+INPUT Rapport.bbl
+INPUT Rapport.bbl
+INPUT ../Forside.tex
+INPUT ../Forside.tex
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/adobe/helvetic/phvr8t.tfm
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/adobe/helvetic/phvb8t.tfm
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/adobe/helvetic/phvr8t.tfm
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/adobe/helvetic/phvr8t.tfm
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/adobe/helvetic/phvr8t.tfm
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/adobe/helvetic/phvb8t.tfm
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/psnfss/t1pcr.fd
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/psnfss/t1pcr.fd
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/adobe/courier/pcrr8t.tfm
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/fonts/vf/adobe/helvetic/phvb8t.vf
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/adobe/helvetic/phvb8r.tfm
+INPUT C:/Users/Jakob/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/fonts/vf/adobe/helvetic/phvr8t.vf
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/adobe/helvetic/phvr8r.tfm
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/fonts/vf/adobe/helvetic/phvr8t.vf
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/adobe/helvetic/phvr8r.tfm
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/fonts/vf/adobe/helvetic/phvr8t.vf
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/adobe/helvetic/phvr8r.tfm
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/fonts/vf/adobe/helvetic/phvb8t.vf
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/adobe/helvetic/phvb8r.tfm
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/fonts/vf/adobe/helvetic/phvr8t.vf
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/adobe/helvetic/phvr8r.tfm
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/fonts/vf/adobe/courier/pcrr8t.vf
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/adobe/courier/pcrr8r.tfm
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/psnfss/t1pbk.fd
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/tex/latex/psnfss/t1pbk.fd
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/adobe/bookman/pbkd8t.tfm
+INPUT Rapport.toc
+INPUT Rapport.toc
+INPUT Billeder/aulogo.png
+INPUT ./Billeder/aulogo.png
+INPUT ./Billeder/aulogo.png
+INPUT ./Billeder/aulogo.png
+INPUT ./Billeder/aulogo.png
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/fonts/vf/adobe/bookman/pbkd8t.vf
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/adobe/bookman/pbkd8r.tfm
+INPUT Sektioner/10_Design.tex
+INPUT Sektioner/10_Design.tex
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/adobe/bookman/pbkl8t.tfm
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/adobe/helvetic/phvr8t.tfm
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/adobe/helvetic/phvb8t.tfm
+INPUT Billeder/aulogo.png
+INPUT ./Billeder/aulogo.png
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/fonts/vf/adobe/bookman/pbkl8t.vf
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/adobe/bookman/pbkl8r.tfm
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/fonts/vf/adobe/helvetic/phvb8t.vf
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/adobe/helvetic/phvb8r.tfm
+INPUT Billeder/1.PNG
+INPUT ./Billeder/1.PNG
+INPUT ./Billeder/1.PNG
+INPUT ./Billeder/1.PNG
+INPUT ./Billeder/1.PNG
+INPUT Billeder/aulogo.png
+INPUT ./Billeder/aulogo.png
+INPUT Sektioner/20_Test.tex
+INPUT Sektioner/20_Test.tex
+INPUT Billeder/dependencyTree.PNG
+INPUT ./Billeder/dependencyTree.PNG
+INPUT ./Billeder/dependencyTree.PNG
+INPUT ./Billeder/dependencyTree.PNG
+INPUT ./Billeder/dependencyTree.PNG
+INPUT Billeder/aulogo.png
+INPUT ./Billeder/aulogo.png
+INPUT Billeder/plan.PNG
+INPUT ./Billeder/plan.PNG
+INPUT ./Billeder/plan.PNG
+INPUT ./Billeder/plan.PNG
+INPUT ./Billeder/plan.PNG
+INPUT Billeder/aulogo.png
+INPUT ./Billeder/aulogo.png
+INPUT Billeder/aulogo.png
+INPUT ./Billeder/aulogo.png
+OUTPUT Rapport.toc
+INPUT Rapport.aux
+INPUT ./Rapport.out
+INPUT ./Rapport.out
+INPUT Rapport.run.xml
+OUTPUT Rapport.run.xml
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/bookman/ubkd8a.pfb
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/bookman/ubkd8a.pfb
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/bookman/ubkl8a.pfb
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/bookman/ubkl8a.pfb
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb
+INPUT C:/Users/Jakob/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb
