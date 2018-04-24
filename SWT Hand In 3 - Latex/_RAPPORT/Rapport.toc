@@ -19,6 +19,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.2}Integrationstests}{5}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Diskussion}{5}{section.2.3}
+\contentsline {section}{\numberline {2.3}Diskussion}{6}{section.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Konklusion}{5}{section.2.4}
+\contentsline {section}{\numberline {2.4}Konklusion}{6}{section.2.4}
