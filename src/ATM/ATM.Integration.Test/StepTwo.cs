@@ -120,5 +120,33 @@ namespace ATM.Integration.Test
             Assert.That(trackRepository.Get("Tag").Vector.X, Is.EqualTo(10001));
         }
 
+        [Test]
+        public void TrackRepository_AddTrack_Fails()
+        {
+            Assert.Catch<FormatException>(() => trackRepository.Add("Tag;10001;"));
+        }
+
+        // Seperation
+        [Test]
+        public void Seperation_SeperationEventArgs_CheckSeperation()
+        {
+            var listOfTrack = new List<ITrack>();
+
+            var track1 = new Track("Tag;10001;10001;10001;00010101010101001");
+            track1.IsInAirspace = true;
+            var track2 = new Track("Tag1;10001;10001;10001;00010101010101001");
+            track2.IsInAirspace = true;
+
+            listOfTrack.Add(track1);
+            listOfTrack.Add(track2);
+            var called = "";
+
+
+            seperation.SeperationEvent += (sender, args) => { called = args.Tag1; };
+
+            seperation.CheckSeperation(listOfTrack, track1);
+
+            Assert.That(called, Is.EqualTo("Tag"));
+        }
     }
 }

@@ -22,12 +22,20 @@ namespace ATM.Classes.Domain
 
         private void Extract(string info)
         {
-            var split = info.Split(';');
-            this.Tag = split[0];
-            this.Vector.X = Int32.Parse(split[1]);
-            this.Vector.Y = Int32.Parse(split[2]);
-            this.Vector.Z = Int32.Parse(split[3]);
-            this.Timestamp = DateTime.ParseExact(split[4],"yyyyMMddHHmmssfff", null);
+            try
+            {
+                var split = info.Split(';');
+                this.Tag = split[0];
+                this.Vector.X = Int32.Parse(split[1]);
+                this.Vector.Y = Int32.Parse(split[2]);
+                this.Vector.Z = Int32.Parse(split[3]);
+                this.Timestamp = DateTime.ParseExact(split[4], "yyyyMMddHHmmssfff", null);
+            }
+            catch (FormatException e)
+            {
+                throw;
+            }
+           
         }
     }
 }
