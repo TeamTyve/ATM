@@ -35,57 +35,5 @@ namespace ATM.Unit.Test.Boundary
             uut.Log(LoggerTarget.Event, "Bla");
             uut.Logger.Received(1).WriteLine("Bla");
         }
-
-        [Test]
-        public void LogHelper_ConsoleWriteMsg_NoLoggerReturns()
-        {
-            var uut = new LogHelper
-            {
-                Logger = null
-            };
-
-            uut.Log(LoggerTarget.Console, "Bla");
-
-            Assert.NotNull(uut.Logger);
-        }
-
-        [Test]
-        public void LogHelper_ConsoleClear_Clears()
-        {
-            var uut = new LogHelper
-            {
-                Logger = Substitute.For<ILogger>()
-            };
-
-            uut.Log(LoggerTarget.Console, String.Empty, true);
-
-            uut.Logger.Received(1).Clear();
-        }
-
-        [Test]
-        public void LogHelper_EventWriteMsg_NoLoggerReturns()
-        {
-            var uut = new LogHelper
-            {
-                Logger = null
-            };
-
-            uut.Log(LoggerTarget.Event, "Bla");
-
-            Assert.NotNull(uut.Logger);
-        }
-
-        [Test]
-        public void LogHelper_EventClear_Clears()
-        {
-            var uut = new LogHelper
-            {
-                Logger = Substitute.For<ILogger>()
-            };
-
-            uut.Log(LoggerTarget.Event, String.Empty, true);
-
-            uut.Logger.Received(1).Clear();
-        }
     }
 }

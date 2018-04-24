@@ -6,8 +6,7 @@ namespace ATM.Classes.Interfaces
     public interface ITrackRepository
     {
         ObservableCollection<ITrack> FlightTracks { get; }
-        void Add(ITrack model);
-        void Add(List<ITrack> tracks);
+        void Add(string track);
 
         ITrack Get(string tag);
         ITrack Get(ITrack track);

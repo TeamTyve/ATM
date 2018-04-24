@@ -16,22 +16,27 @@ namespace ATM.Classes
         {
             foreach (var track in list)
             {
-                if (!track.IsInAirspace || !current.IsInAirspace) continue;
-                if (current.Tag == track.Tag)
+                if (track.IsInAirspace && current.IsInAirspace)
                 {
-                }
-                else if ((Math.Abs(current.Vector.Z - track.Vector.Z) <= 300) && (
-                            (current.Vector.X + 5000 >= track.Vector.X && current.Vector.X - 5000 <= track.Vector.X) &&
-                            (current.Vector.Y + 5000 >= track.Vector.Y && current.Vector.Y - 5000 <= track.Vector.Y)))
-                {
-                    RaiseSeperationEvent(new SeperationEventArgs(current.Tag, DateTime.Now, track.Tag));
+                    if (current.Tag == track.Tag)
+                    {
+                    }
+                    else if((Math.Abs(current.Vector.Z-track.Vector.Z)<=300) && (
+                        (current.Vector.X+5000>=track.Vector.X && current.Vector.X-5000 <= track.Vector.X) &&
+                        (current.Vector.Y + 5000 >= track.Vector.Y && current.Vector.Y-5000 <= track.Vector.Y)))
+                    {
+                        RaiseSeperationEvent(new SeperationEventArgs(current.Tag,DateTime.Now, track.Tag));
+                    }
+                   
+                   
                 }
             }
+            
         }
 
         public IEnumerable<Tuple<ITrack, ITrack>> CheckSeperation(List<ITrack> tracks)
         {
-            var toRemove = new List<Tuple<ITrack, ITrack>>();
+            var list = new List<Tuple<ITrack, ITrack>>();
 
 
             foreach (var current in tracks)
@@ -41,23 +46,19 @@ namespace ATM.Classes
                     if (current.Tag == track.Tag)
                     {
                     }
-                    //else if (Math.Abs(current.Vector.Z - track.Vector.Z) <= 300 &&
-                    //         (current.Vector.X + 5000 <= track.Vector.X || current.Vector.X - 5000 >= track.Vector.X) &&
-                    //         (current.Vector.Y + 5000 <= track.Vector.Y || current.Vector.Y - 5000 >= track.Vector.Y))
-                    else if ((Math.Abs(current.Vector.Z - track.Vector.Z) <= 300) && (
-                                     (current.Vector.X + 5000 >= track.Vector.X && current.Vector.X - 5000 <= track.Vector.X) &&
-                                     (current.Vector.Y + 5000 >= track.Vector.Y && current.Vector.Y - 5000 <= track.Vector.Y)))
+                    else if (Math.Abs(current.Vector.Z - track.Vector.Z) <= 300 &&
+                             (current.Vector.X + 5000 <= track.Vector.X || current.Vector.X - 5000 >= track.Vector.X) ||
+                             (current.Vector.Y + 5000 <= track.Vector.Y || current.Vector.Y - 5000 >= track.Vector.Y))
                     {
                     }
                     else
                     {
-                        // Tracks to remove
-                        toRemove.Add(new Tuple<ITrack, ITrack>(current, track));
+                        list.Add(new Tuple<ITrack, ITrack>(current, track));
                     }
                 }
             }
 
-            return toRemove.AsEnumerable();
+            return list.AsEnumerable();
         }
 
         protected virtual void RaiseSeperationEvent(SeperationEventArgs e)

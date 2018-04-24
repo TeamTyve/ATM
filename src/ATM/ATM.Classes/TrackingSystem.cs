@@ -16,7 +16,7 @@ namespace ATM.Classes
         public TrackingSystem()
         {
             var transponderReceiver = TransponderReceiverFactory.CreateTransponderDataReceiver();
-            //TrackObservationSystem = new TrackObservationSystem();
+            TrackObservationSystem = new TrackObservationSystem(transponderReceiver);
         }
 
     }

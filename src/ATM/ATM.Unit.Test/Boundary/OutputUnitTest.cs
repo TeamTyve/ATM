@@ -23,8 +23,8 @@ namespace ATM.Unit.Test.Boundary
 
             var tracks = new List<Track>();
 
-            //var track = new Track("Tag;10001;10001;10001;00010101010101001") {IsInAirspace = true};
-            //tracks.Add(track);
+            var track = new Track("Tag;10001;10001;10001;00010101010101001") {IsInAirspace = true};
+            tracks.Add(track);
 
             uut.Print(tracks.AsEnumerable());
             
@@ -41,8 +41,8 @@ namespace ATM.Unit.Test.Boundary
 
             var tracks = new List<Track>();
 
-            //var track = new Track("Tag;10001;10001;10001;00010101010101001") { IsInAirspace = false };
-            //tracks.Add(track);
+            var track = new Track("Tag;10001;10001;10001;00010101010101001") { IsInAirspace = false };
+            tracks.Add(track);
 
             uut.Print(tracks.AsEnumerable());
 

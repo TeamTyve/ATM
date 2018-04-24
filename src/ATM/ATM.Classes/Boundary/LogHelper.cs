@@ -28,6 +28,8 @@ namespace ATM.Classes.Boundary
                     if (clear)
                         Logger.Clear();
                     break;
+                default:
+                    return;
             }
         }
     }
